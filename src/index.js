@@ -1,6 +1,4 @@
-
-/*
-First way to connect with the database mongo db
+/* First way to connect with the database mongo db
 
 function connectDB(){}
 connectDB()
@@ -28,10 +26,9 @@ const app=express();
 */
 
 import connectDb from "./db";
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 dotenv.config({
-    path:'./env'
+  path: "./env",
 });
 
-
-connectDb()
+connectDb();
